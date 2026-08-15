@@ -1,0 +1,19 @@
+<div class="maintenance-page">
+  <div class="maintenance-card">
+    <div class="maintenance-header">
+      <img src="assets/luigi.webp" alt="Luigi saludando" class="luigi-image" />
+      @if (user) {
+        <p class="greeting">Hola, {{ user.name }}</p>
+      }
+    </div>
+
+    <div class="maintenance-body">
+      <h1 class="maintenance-title">Estamos trabajando en el control de gastos...</h1>
+      <p class="maintenance-text">Vuelva pronto.</p>
+
+      <button type="button" class="btn-logout" (click)="logout()">
+        Cerrar sesión
+      </button>
+    </div>
+  </div>
+</div>
