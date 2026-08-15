@@ -1,0 +1,106 @@
+.maintenance-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #0d1420;
+  overflow: hidden;
+}
+
+.maintenance-page::before,
+.maintenance-page::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.maintenance-page::before {
+  width: 300px;
+  height: 300px;
+  background: rgba(79, 143, 247, 0.2);
+  top: -70px;
+  left: -60px;
+}
+
+.maintenance-page::after {
+  width: 260px;
+  height: 260px;
+  background: rgba(90, 100, 114, 0.35);
+  bottom: -70px;
+  right: -50px;
+}
+
+.maintenance-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #263042;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+.maintenance-header {
+  background: #3c4453;
+  padding: 32px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.luigi-image {
+  width: 110px;
+  height: auto;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.4));
+}
+
+.greeting {
+  margin: 12px 0 0;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #c3c9d1;
+  font-weight: 600;
+}
+
+.maintenance-body {
+  background: #142235;
+  padding: 28px 32px 34px;
+  text-align: center;
+}
+
+.maintenance-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f4f6f8;
+  line-height: 1.45;
+}
+
+.maintenance-text {
+  margin: 0 0 26px;
+  font-size: 14px;
+  color: #9aa5b4;
+}
+
+.btn-logout {
+  padding: 11px 28px;
+  border-radius: 8px;
+  border: 1px solid #3c4453;
+  background: #1b2738;
+  color: #f4f6f8;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.btn-logout:hover {
+  border-color: #e5484d;
+  background: rgba(229, 72, 77, 0.12);
+}
